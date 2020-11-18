@@ -1,3 +1,7 @@
+# Get the BC Containerhelper
+# See also: https://freddysblog.com/2020/08/11/bccontainerhelper/
+Install-Module BcContainerHelper -force
+
 # Creates a BC Container
 $artifactUrl = Get-BCArtifactUrl -version 17 -country se -select Latest
 $credential = New-Object pscredential 'admin', (ConvertTo-SecureString -String 'P@ssword1' -AsPlainText -Force)
