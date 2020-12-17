@@ -1,5 +1,6 @@
 # Get the BC Containerhelper
 # See also: https://freddysblog.com/2020/08/11/bccontainerhelper/
+Uninstall-Module navcontainerhelper -AllVersions
 Install-Module BcContainerHelper -force
 
 # Creates a BC Container
