@@ -9,7 +9,7 @@ $credential = New-Object pscredential 'admin', (ConvertTo-SecureString -String '
 
 New-BcContainer `
     -accept_eula `
-    -containerName test `
+    -containerName devBC `
     -artifactUrl $artifactUrl `
     -Credential $credential `
     -auth UserPassword `
