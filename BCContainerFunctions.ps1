@@ -15,4 +15,5 @@ New-BcContainer `
     -auth UserPassword `
     -dns '8.8.8.8' `
     -memoryLimit 5G `
+    -includeTestToolkit -includeTestLibrariesOnly `
     -updateHosts
