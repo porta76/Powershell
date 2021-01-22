@@ -13,4 +13,6 @@ New-BcContainer `
     -artifactUrl $artifactUrl `
     -Credential $credential `
     -auth UserPassword `
+    -dns '8.8.8.8' `
+    -memoryLimit 4G `
     -updateHosts
