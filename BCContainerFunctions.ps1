@@ -14,5 +14,5 @@ New-BcContainer `
     -Credential $credential `
     -auth UserPassword `
     -dns '8.8.8.8' `
-    -memoryLimit 4G `
+    -memoryLimit 5G `
     -updateHosts
