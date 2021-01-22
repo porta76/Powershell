@@ -7,6 +7,8 @@ Install-Module BcContainerHelper -force
 $artifactUrl = Get-BCArtifactUrl -version 17 -country se -select Latest
 $credential = New-Object pscredential 'admin', (ConvertTo-SecureString -String 'P@ssword1' -AsPlainText -Force)
 
+# Install testlibraries for automated testing
+# Test libraries requires a developer license
 New-BcContainer `
     -accept_eula `
     -containerName devBC `
@@ -16,4 +18,5 @@ New-BcContainer `
     -dns '8.8.8.8' `
     -memoryLimit 5G `
     -includeTestToolkit -includeTestLibrariesOnly `
-    -updateHosts
+    -updateHosts `
+    -licenseFile 'License.flf'
