@@ -1,3 +1,10 @@
+# To get older versions and other images
+# Run scripts go get proper artifact Urls
+#
+#   Write-Host -ForegroundColor Yellow "Get all NAV 2018 SE artifact Urls"
+#   (Get-NavArtifactUrl -nav 2018 -country 'se' -select all).count
+#   Get-NavArtifactUrl -nav 2018 -country 'se' -select all
+
 # Get the BC Containerhelper
 # See also: https://freddysblog.com/2020/08/11/bccontainerhelper/
 Uninstall-Module navcontainerhelper -AllVersions
