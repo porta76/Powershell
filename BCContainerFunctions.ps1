@@ -27,3 +27,19 @@ New-BcContainer `
     -includeTestToolkit -includeTestLibrariesOnly `
     -updateHosts `
     -licenseFile 'License.flf'
+    
+    
+# Example regarding information about images    
+# Ex 1   
+Write-Host -ForegroundColor Yellow "Get all BC 15 SE artifact Urls"
+(Get-BCArtifactUrl -version 15 -select all).count
+Get-BCArtifactUrl -version 15  -select all
+
+# Ex2
+Write-Host -ForegroundColor Yellow "Get all BC SE artifact Urls OnPrem"
+Get-BCArtifactUrl -country "se" -type OnPrem -select all
+
+# Ex 3
+Write-Host -ForegroundColor Yellow "Get all NAV 2018 SE artifact Urls"
+(Get-NavArtifactUrl -nav 2018 -country 'se' -select all).count
+Get-NavArtifactUrl -nav 2018 -country 'se' -select all
